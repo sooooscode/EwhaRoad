@@ -3,7 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>배꽃길</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <div class="screen">
+        <div class="sub-title">
+            이화여자대학교 지름길<br>안내<br>서비스
+        </div>
+        <div class="main-title">배꽃길</div>
+        <div class="btn">click</div>
+    </div>
+    <script>
+        const $btn = document.querySelector('.btn');
+
+        $btn.addEventListener('click', () => {
+        // 다음 html 페이지로 연결된다.
+        window.location = '../SetDestinations/SetDestinations.html';
+});
+    </script>
 </body>
 </html>
