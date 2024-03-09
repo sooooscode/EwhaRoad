@@ -1,3 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 header {
     font-size: 3.5em;
     font-weight: bold;
@@ -6,7 +12,7 @@ header {
     padding-bottom: 2%;
     display: flex;
     flex-direction: column-reverse;
-    width: 100%;
+    width: 100vw;
     height: 3em;
     background-color: #00462a;
 }
