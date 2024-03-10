@@ -1,7 +1,16 @@
 package EwhaRoad.EwhaRoad.domain;
 // member.java 참고
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import org.springframework.data.annotation.Id;
+
+
+//@Entity
 public class Route {
 
+    //@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String destination;
     private String startingpoint;
