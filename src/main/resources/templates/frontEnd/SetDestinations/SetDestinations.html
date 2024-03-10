@@ -16,11 +16,11 @@
         <i id="sci" class="fa-solid fa-location-dot end-marker listSci"></i>
         <i id="engr" class="fa-solid fa-location-dot end-marker listEngr"></i>
         <i id="dorm" class="fa-solid fa-location-dot end-marker listDorm"></i>
-        <i id="main-gate" class="fa-solid fa-location-dot start-marker"></i>
-        <i id="hak" class="fa-solid fa-location-dot start-marker"></i>
-        <i id="posco" class="fa-solid fa-location-dot start-marker"></i>
-        <i id="back-gate" class="fa-solid fa-location-dot start-marker"></i>
-        <i id="research" class="fa-solid fa-location-dot start-marker"></i>
+        <i id="main-gate" class="fa-solid fa-location-dot start-marker listMaingate"></i>
+        <i id="hak" class="fa-solid fa-location-dot start-marker listHak"></i>
+        <i id="posco" class="fa-solid fa-location-dot start-marker listPosco"></i>
+        <i id="back-gate" class="fa-solid fa-location-dot start-marker listBackgate"></i>
+        <i id="research" class="fa-solid fa-location-dot start-marker listResearch"></i>
 
     </div>
     <div class="dest-text">
@@ -35,6 +35,14 @@
                     <div class="listSci" onclick="showText(this.innerText)">종합과학관</div>
                     <div class="listEngr" onclick="showText(this.innerText)">신공학관/아산공학관</div>
                     <div class="listDorm" onclick="showText(this.innerText)">기숙사(한우리집/이하우스)</div>
+                </div>
+                <div class="dropdown-content startlist" style="display:none">
+                    <div class="listMaingate" onclick="showText(this.innerText)">정문</div>
+                    <div class="listHuman" onclick="showText(this.innerText)">생활환경관</div>
+                    <div class="listHak" onclick="showText(this.innerText)">학관</div>
+                    <div class="listPosco" onclick="showText(this.innerText)">포스코관</div>
+                    <div class="listBackgate" onclick="showText(this.innerText)">후문</div>
+                    <div class="listResearch" onclick="showText(this.innerText)">연구협력관</div>
                 </div>
             </span>
         </div>
