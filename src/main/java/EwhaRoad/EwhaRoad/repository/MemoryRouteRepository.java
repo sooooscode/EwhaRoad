@@ -1,9 +1,11 @@
 package EwhaRoad.EwhaRoad.repository;
 //MemoryMemberRepository 참고
 import EwhaRoad.EwhaRoad.domain.Route;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
+@Repository
 public class MemoryRouteRepository implements RouteRepository {
 
     private static Map<Long, Route> store = new HashMap<>();
