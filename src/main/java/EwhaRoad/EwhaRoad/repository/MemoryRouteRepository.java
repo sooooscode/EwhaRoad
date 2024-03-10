@@ -30,9 +30,9 @@ public class MemoryRouteRepository implements RouteRepository {
     }
 
     @Override
-    public Optional<Route> findByStartingPoint(String startingPoint) {
+    public Optional<Route> findByStartingPoint(String startingpoint) {
         return store.values().stream()
-                .filter(route -> route.getStartingPoint().equals(startingPoint))
+                .filter(route -> route.getStartingPoint().equals(startingpoint))
                 .findAny();
     }
 

@@ -12,5 +12,5 @@ public interface RouteRepository {
 
     // 특정 명칭으로 루트 찾기
     Optional<Route> findByDestination(String destination);
-    Optional<Route> findByStartingPoint(String startingPoint);
+    Optional<Route> findByStartingPoint(String startingpoint);
 }

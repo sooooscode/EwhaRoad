@@ -38,11 +38,11 @@ public class Route {
         this.destination = destination;
     }
 
-    public String getStartingpoint() {
+    public String getStartingPoint() {
         return startingpoint;
     }
 
-    public void setStartingpoint(String startingpoint) {
+    public void setStartingPoint(String startingpoint) {
         this.startingpoint = startingpoint;
     }
 
