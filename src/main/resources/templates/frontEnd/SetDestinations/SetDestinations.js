@@ -36,7 +36,6 @@ function showText (value) {
 }
 
 const clickMenuSelect = (markerArr, target, placelist) => {
-    let number = 0;
     markerArr.forEach(element => {
         if (element.id === target.id) {
             number = markerArr.indexOf(element);
@@ -55,7 +54,7 @@ const clickMarker = (e) => {
     e.target.classList.add('clicked');
     currentplaceID = e.target.id;
     // 이전에 다른 마커를 클릭했었다면, 그 마커 크기 축소
-    // let number = 0;
+    let number = 0;
     if (!destination) clickMenuSelect(endMarkers, e.target, $endlist);
     else clickMenuSelect(startMarkers, e.target, $startlist);
     // endMarkers.forEach(element => {
