@@ -9,7 +9,7 @@
     background-image: linear-gradient(
         rgba(255, 255, 255, 0.6),
         rgba(255, 255, 255, 0.6)
-      ), url("../map.jpg");
+      ), url("map.jpg");
     background-repeat: no-repeat;
     background-size: 1200px;
     background-position: center;
@@ -18,7 +18,7 @@
 
 .screen::after {
     content: "";
-    background: url('../map.jpg');
+    background: url('map.jpg');
     background-repeat: no-repeat;
     background-size: 1200px;
     background-position: center;
