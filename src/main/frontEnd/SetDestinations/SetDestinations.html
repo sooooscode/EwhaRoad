@@ -10,29 +10,50 @@
 <body>
     <header>step1. 도착지를 설정해주세요.</header>
     <div class="map-container">
-        <i id="engr" class="fa-solid fa-location-dot"></i>
-        <i id="sci" class="fa-solid fa-location-dot"></i>
-        <i id="law" class="fa-solid fa-location-dot"></i>
-        <i id="biz" class="fa-solid fa-location-dot"></i>
-        <i id="human" class="fa-solid fa-location-dot"></i>
-        <i id="dorm" class="fa-solid fa-location-dot"></i>
+        <i id="human" class="fa-solid fa-location-dot listHuman"></i>
+        <i id="biz" class="fa-solid fa-location-dot end-marker listBiz"></i>
+        <i id="law" class="fa-solid fa-location-dot end-marker listLaw"></i>
+        <i id="sci" class="fa-solid fa-location-dot end-marker listSci"></i>
+        <i id="engr" class="fa-solid fa-location-dot end-marker listEngr"></i>
+        <i id="dorm" class="fa-solid fa-location-dot end-marker listDorm"></i>
+        <i id="back-gate" class="fa-solid fa-location-dot start-marker"></i>
+        <i id="hak" class="fa-solid fa-location-dot start-marker"></i>
+        <i id="posco" class="fa-solid fa-location-dot start-marker"></i>
+        <i id="main-gate" class="fa-solid fa-location-dot start-marker"></i>
+        <i id="research" class="fa-solid fa-location-dot start-marker"></i>
+
     </div>
     <div class="dest-text">
-        <div class="dropdown">
+        <div class="dropdown dest1">
             <span class="step1">도착지: </span>
             <span class="dropbtn-plus">
                 <span class="dropbtn">...</span>
-                <div class="dropdown-content">
-                    <div>생활환경관</div>
-                    <div>경영관(이화신세계관)</div>
-                    <div>법학관</div>
-                    <div>종합과학관</div>
-                    <div>신공학관/아산공학관</div>
-                    <div>기숙사(한우리집/이하우스)</div>
+                <div class="dropdown-content endlist" style="display:none">
+                    <div class="listHuman" onclick="showText(this.innerText)">생활환경관</div>
+                    <div class="listBiz" onclick="showText(this.innerText)">경영관(이화신세계관)</div>
+                    <div class="listLaw" onclick="showText(this.innerText)">법학관</div>
+                    <div class="listSci" onclick="showText(this.innerText)">종합과학관</div>
+                    <div class="listEngr" onclick="showText(this.innerText)">신공학관/아산공학관</div>
+                    <div class="listDorm" onclick="showText(this.innerText)">기숙사(한우리집/이하우스)</div>
                 </div>
-        </span>
+            </span>
         </div>
+        <!-- <div class="dropdown dest2">
+            <span class="step1">출발지: </span>
+            <span class="dropbtn-plus">
+                <span class="dropbtn">...</span>
+                <div class="dropdown-content startlist">
+                    <div>정문</div>
+                    <div>생활환경관</div>
+                    <div>학관</div>
+                    <div>포스코관</div>
+                    <div>후문</div>
+                    <div>연구협력관</div>
+                </div>
+            </span>
+        </div> -->
     </div>
+    <div class="next-btn">다음으로</div>
     <script  type="text/javascript" src="SetDestinations.js"></script>
 </body>
 </html>
