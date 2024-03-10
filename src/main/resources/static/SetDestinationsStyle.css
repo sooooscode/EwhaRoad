@@ -22,7 +22,7 @@ i {
 .map-container {
     height: 1030px;
     width: 980px;
-    background-image: url('../map.jpg');
+    background-image: url('map.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;

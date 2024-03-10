@@ -1,9 +1,16 @@
 <!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<!--윗 문장 추가-->
+
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <title>배꽃길</title>
-    <link rel="stylesheet" href="index.css">
+
+    <!--아래처럼 수정-->
+    <link rel="stylesheet" th:href="@{/index.css}"/>
+    <!--<link rel="stylesheet" href="index.css">-->
 </head>
 <body>
     <div class="screen">
@@ -18,7 +25,7 @@
 
         $btn.addEventListener('click', () => {
         // 다음 html 페이지로 연결된다.
-        window.location = '../SetDestinations/SetDestinations.html';
+        window.location = 'SetDestinations.html';
 });
     </script>
 </body>
