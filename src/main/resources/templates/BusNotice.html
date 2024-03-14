@@ -4,32 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <title>배꽃길 - 셔틀 안내 사항</title>
-    <link rel="stylesheet" th:href="@{/headerStyle.css}"/>
-    <link rel="stylesheet" th:href="@{/BusNoticeStyle.css}"/>
+    <!-- <link rel="stylesheet" th:href="@{/headerStyle.css}"/>
+    <link rel="stylesheet" th:href="@{/BusNoticeStyle.css}"/> -->
+    <link rel="stylesheet" href="../static/headerStyle.css">
+    <link rel="stylesheet" href="../static/BusNoticeStyle.css">
 
 </head>
 <body>
     <header>step 3. 길 안내</header>
     <div class="container">
         <div class="notice">
-            <div class="box shuttle">셔틀 안내 사항</div>
-            <div class="letters">
-                1. 운행시간<br/>
-                평일 주간: 07:50~21:00<br/>
-                평일 야간: 21:10~23:40<br/>
-                토요일: 18:00~23:40<br/>
-                일요일: 노선 미운행<br/><br/>
-                2. 미운행시간: 12:00~13:00
+            <div class="shuttle">셔틀 운행 시간</div>
+                <div class="letters">
+                    <ol>
+                        <li>연구협력관행 노선(주간)
+                            <div>
+                                오전 07:50~11:50<br/>
+                                오후 13:00~21:00<br/>
+                                배차간격 5~10분<br/>
+                            </div>
+                        </li>
+                        <li>한우리집행 노선
+                            <div>
+                                오전 08:25~10:45<br/>
+                                오후 13:25~16:05<br/>
+                                배차간격 20분<br/>
+                            </div>
+                        </li>
+                        <li>기숙사 야간 노선
+                         <div>
+                            평일 21:10~23:40<br/>
+                            토요일 19:10~23:40<br/>
+                            배차간격 10분<br/>
+                        </div>
+                    </li>
+                </ol>
             </div>
         </div>
         <div class="routes">
-            <div class="day">
-                <div class="box">주간 셔틀</div>
+            <div class="Box">
+                <div class="shuttle B1Res">연구협력관행 노선</div>
+                <img id="B1img" src="../static/ResearchRoute2.png"
+                alt="연구협력관행 노선 경로 이미지" style="display:none"/>
             </div>
-            <div class="night">
-                <div class="box">야간 셔틀</div>
+            <div class="Box">
+                <div class="shuttle B2HWR">한우리집행 노선</div>
+                <img id="B2img" src="../static/HwrRoute2.png"
+                alt="한우리집행 노선 경로 이미지" style="display:none"/>
+            </div>
+            <div class="Box">
+                <div class="shuttle B3Nght">기숙사 야간 노선</div>
+                <img id="B3img" src="../static/NightRoute2.png"
+                alt="기숙사 야간 노선 경로 이미지" style="display:none"/>
             </div>
         </div>
     </div>
+    <script  type="text/javascript" src="../static/BusNotice.js"></script>
 </body>
 </html>

@@ -17,33 +17,63 @@ body {
 
 .notice {
     text-align: center;
-    padding: 5%;
+    padding-top: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .shuttle {
     width: 40rem;
-}
-.letters {
-    font-size: 3em;
-    font-weight: bold;
-    color: #00462a;
-    text-align: left;
-    padding: 5%;
-}
-
-.routes {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.box {
     background-color: #00462a;
     padding: 0.5em;
     font-size: 3em;
     color: white;
     text-align: center;
 }
+.clicked {
+    background-color: #003520;
+}
+.letters {
+    font-size: 3em;
+    font-weight: bold;
+    color: #00462a;
+    text-align: left;
+    padding-top: 5%;
+}
+li {
+    margin-bottom: 1em;
+}
+li div{
+    font-weight:lighter;
+}
+
+.routes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Box {
+    padding-bottom: 1em;
+}
+.eachRoutes {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    width: 380px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    /* display: none; */
+}
+/* .imgClicked {
+    display: block;
+} */
