@@ -132,14 +132,16 @@ $research.addEventListener('click', clickMarker);
 
 // '다음으로' 버튼
 const $nextBtn = document.querySelector('.next-btn');
+const $okayBtn = document.querySelector('.okay-btn');
 $nextBtn.addEventListener('click', (e) => {
     // 도착지 선택 전인 경우 alert
     if (!permitNext) {
         alert('도착지를 선택해 주세요.');
         return;
     }
+    permitNext = false;
     // destination, destinationID 현재 위치로 확정
-    NextBtnClicked = true;
+    // NextBtnClicked = true;
     destination = currentplace;
     destinationID = currentplaceID;
     // 도착지 마커들 사라짐 (선택된 도착지 마커와 생활관 제외)
@@ -171,4 +173,23 @@ $nextBtn.addEventListener('click', (e) => {
     $dropdowntext.innerText = '...';
 
     $nextBtn.style.display = 'none';
+    $okayBtn.style.display = '';
+});
+// '길 찾기' 버튼 클릭
+$okayBtn.addEventListener('click', (e) => {
+    if (!permitNext) {
+        alert('출발지를 선택해 주세요.');
+        return;
+    }
+    startPoint = currentplace;
+    startPointID = currentplaceID;
+    
+    // 데이터 보내기
+    // 전달할 데이터
+    const DestInfo = {
+        destination: destination,
+        startPoint: startPoint,
+    }
+    localStorage.setItem("user-info", JSON.stringify(DestInfo));
+    window.location = 'PathGuide.html';
 });

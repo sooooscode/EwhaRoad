@@ -1,0 +1,62 @@
+.container {
+    margin-top: 3em;
+    margin-left: 6em;
+    margin-right: 6em;
+}
+
+.destBox {
+    background-color: #F5F5F5;
+    font-size: 3.3em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.start-end {
+    /* padding: 0.7em; */
+    display: flex;
+    flex-direction: row;
+}
+.text {
+    padding: 0.7em;
+    width: 300px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #F5F5F5;
+    border-right: 1px solid darkolivegreen;
+}
+.dataIN {
+    width: 100%;
+    padding: 0.7em;
+    text-align: left;
+}
+hr {
+    border-color: darkolivegreen;
+}
+
+i {
+    font-size: 5.5em;
+    margin-left: 0.2em;
+    margin-right: 0.3em;
+}
+.icon-box {
+    padding: 2em;
+}
+.icons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+.map {
+    width: 15rem;
+    background-color: #00462a;
+    padding: 0.5em;
+    font-size: 2.5em;
+    color: white;
+    text-align: center;
+}
+.predicted-time {
+    font-size: 2.8em;
+    font-weight: bold;
+}
